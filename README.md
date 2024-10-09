@@ -8,6 +8,7 @@ Generated with the help of https://medium.com/@simontoth/best-way-to-manage-your
 ## Getting Started 
 
 Create the new directory 
+testing!!!!
 
 `mkdir .dotfiles`
 
