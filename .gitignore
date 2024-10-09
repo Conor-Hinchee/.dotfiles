@@ -1,0 +1,44 @@
+# Ignore the .DS_Store file commonly created by macOS
+.DS_Store
+
+# Ignore the .git directory
+.git/
+refs/
+objects/
+config
+description
+HEAD
+*.sample
+exclude
+COMMIT_EDITMSG
+FETCH_HEAD
+index
+ORIG_HEAD
+
+# Ignore temporary files created by editors
+*.swp
+*.swo
+*~
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.o
+*.obj
+*.pyc
+*.pyo
+*.class
+
+# Ignore backup files
+*.bak
+*.tmp
+
+# Ignore system-specific files
+Thumbs.db
+ehthumbs.db
+
+# Ignore any other unwanted files
+.idea/
+.vscode/
+node_modules/
