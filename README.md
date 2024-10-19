@@ -36,17 +36,35 @@ push 'er up
 
 On the next machine ...
 
-pre-req
-
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+ensure you are home
+`cd ~`
 
 create the alias
 `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME`
 
 clone the repo
-`git clone --bare git@github.com:Conor-Hinchee/dotfiles.git $HOME/.dotfiles`
+`git clone https://github.com/Conor-Hinchee/.dotfiles.git`
 
 set up the git config
 `dotfiles config --local status.showUntrackedFiles no`
 `dotfiles checkout`
- 
+
+#install home brew
+https://docs.brew.sh/Homebrew-on-Linux
+
+install zsh and oh-my-zsh
+https://formulae.brew.sh/formula/zsh
+https://github.com/ohmyzsh/ohmyzsh
+
+update the local .zshrc file so you point to the custom folder
+```bash     
+# Would you like to use another custom folder than $ZSH/custom?
+ZSH_CUSTOM=$HOME/.dotfiles/.zsh_custom
+ ```
+
+Install nvm 
+https://formulae.brew.sh/formula/nvm
+
+Install nvchad
+https://nvchad.com/docs/quickstart/install/
+
