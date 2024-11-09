@@ -12,7 +12,7 @@ alias edit-dotfiles="code ~/.dotfiles"
 # SHELL HELPERS
 #
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
-alias refresh="exec $SHELL -l"
+alias refresh="source ~/.zshrc"
 alias cl="clear"
 alias timestamp="date '+%m%d%Y%H%M%S'"
 alias new-script='cd ~/.dotfiles/scripts && ./set-executable.sh'
