@@ -32,7 +32,7 @@ alias upgrade-supa='brew upgrade supabase'
 ###############################################################################
 # EXPRESS SHORTCUTS
 # 
-# alias cdr-dev="cd ~/Documents/Express && ls"
+alias cdr-exp="cd ~/Documents/Express && ls"
 alias cdr-app="cd ~/Documents/Express/app_express.com"
 alias cdr-server="cd ~/Documents/Express/raven-server"
 alias dev-app="cd ~/Documents/Express/app_express.com && nvim"
