@@ -25,6 +25,7 @@ alias branch-clean="~/.dotfiles/scripts/branch-clean.sh"
 alias git-reset="git clean --force && git reset --hard"
 alias current-branch="~/.dotfiles/scripts/current-branch.sh"
 alias git-cut-branch="~/.dotfiles/scripts/git-cut-branch.sh"
+alias git-last='git log -n 10 --pretty=format:"%C(yellow)%h%Creset -%C(green)%C(bold)%cr%Creset - %C(cyan)%an%Creset : %s"'
 
 # Supabase
 alias upgrade-supa='brew upgrade supabase'
