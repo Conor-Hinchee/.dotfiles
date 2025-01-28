@@ -1,6 +1,6 @@
 # Define a function to confirm before running commands in a specific directory
 confirm_directory() {
-    local target_directory="/Users/moarwaffles/.dotfiles"
+    local target_directory="~/.dotfiles"
     
     if [[ "$(pwd)" = "$target_directory" ]]; then
         echo "commands are still executing in $target_directory this is a nice place holder"
