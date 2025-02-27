@@ -14,7 +14,7 @@ alias edit-dotfiles="code ~/.dotfiles"
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 alias refresh="source ~/.zshrc"
 alias cl="clear"
-alias timestamp="date '+%m%d%Y%H%M%S'"
+alias timestamp="date '+%m%d%Y%H%M%S' | tee /dev/stderr | pbcopy"
 alias new-script='cd ~/.dotfiles/scripts && ./set-executable.sh'
 
 ###############################################################################
@@ -27,9 +27,20 @@ alias current-branch="~/.dotfiles/scripts/current-branch.sh"
 alias git-cut-branch="~/.dotfiles/scripts/git-cut-branch.sh"
 alias git-last='git log -n 10 --pretty=format:"%C(yellow)%h%Creset -%C(green)%C(bold)%cr%Creset - %C(cyan)%an%Creset : %s"'
 
+###############################################################################
 # Supabase
+#
 alias upgrade-supa='brew upgrade supabase'
 
+###############################################################################
+# Node
+#
+alias hammer-node='killall node'
+
+###############################################################################
+#  Obsidian
+# 
+alias sync-plugins="~/.dotfiles/scripts/sync-plugins.sh"
 ###############################################################################
 # EXPRESS SHORTCUTS
 # 
@@ -44,4 +55,4 @@ alias latest-app="cd ~/Documents/Express/app_express.com && git branch && git ch
 alias latest-server="cd ~/Documents/Express/raven-server && git branch && git checkout develop/v4.x && git pull origin develop/v4.x"
 alias open-report="open ./coverage/lcov-report/index.html"
 alias run-flag-build="~/.dotfiles/scripts/App_Express_Flag_Builder/run.sh"
-
+alias kill-server="killall node"

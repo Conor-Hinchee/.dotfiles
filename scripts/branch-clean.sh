@@ -9,13 +9,11 @@ gum style \
     - BY CONOR HINCHEE (using GUM)
   '
 
-
-### Ask for main brain and purge
+### Ask for main brain and purges everything else
 echo "Select Main Branch"
 branches=$(git branch | cut -c 3-)
 masterBranch=$(gum choose $branches --height 15  --limit 1)
 gum spin --spinner dot --show-output --title "PURGING..." -- git checkout $masterBranch | git branch | grep -v $masterBranch | xargs git branch -D
-
 
 
 ### print the stash list
