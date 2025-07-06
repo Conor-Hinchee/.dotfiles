@@ -1,0 +1,8 @@
+# Files named "ignore"
+ignore
+
+# Directories named "ignore" and their contents
+ignore/
+
+# Files with .ignore. in their filename
+*.ignore.*
