@@ -56,3 +56,11 @@ alias latest-server="cd ~/Documents/Express/raven-server && git branch && git ch
 alias open-report="open ./coverage/lcov-report/index.html"
 alias run-flag-build="~/.dotfiles/scripts/App_Express_Flag_Builder/run.sh"
 alias kill-server="killall node"
+
+
+
+###############################################################################
+# ALITA BOT
+# 
+alias obsidian-sync='rsync -avz /Users/moarwaffles/Documents/obsidian/Conor moarwaffles@34.44.251.179:/home/moarwaffles/obsidian/'
+alias restart-clawdbot='clawdbot gateway restart'
