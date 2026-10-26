@@ -20,7 +20,7 @@ alias new-script='cd ~/.dotfiles/scripts && ./set-executable.sh'
 ###############################################################################
 # GIT
 #
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git -C $HOME/.dotfiles'
 alias branch-clean="~/.dotfiles/scripts/branch-clean.sh"
 alias git-reset="git clean --force && git reset --hard"
 alias current-branch="~/.dotfiles/scripts/current-branch.sh"
@@ -62,9 +62,9 @@ alias kill-server="killall node"
 ###############################################################################
 # ALITA BOT
 # 
-alias obsidian-sync='rsync -avz /Users/moarwaffles/Documents/obsidian/Conor moarwaffles@34.44.251.179:/home/moarwaffles/obsidian/'
-alias restart-clawdbot='clawdbot gateway restart'
-alias clear-clawdbot='clawdbot sessions clear'
-alias main-claude='clawdbot config set agents.defaults.model.primary anthropic/claude-sonnet-4-20250514'
-alias main-gemini='clawdbot config set agents.defaults.model.primary google/gemini-3-pro-preview'
-alias main-gpt4='clawdbot config set agents.defaults.model.primary openai/gpt-4.1-mini'
+alias obsidian-push='rsync -avz \
+  "/Users/moarwaffles/Documents/obsidian/Conor/" \
+  moarwaffles@34.44.251.179:/home/moarwaffles/obsidian/Conor/'
+alias obsidian-pull='rsync -avz \
+  moarwaffles@34.44.251.179:/home/moarwaffles/obsidian/Conor/ \
+  "/Users/moarwaffles/Documents/obsidian/Conor/"'
